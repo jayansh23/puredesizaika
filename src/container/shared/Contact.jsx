@@ -45,6 +45,7 @@ const FamouseDishes = [
     )}
     <h2>Order in Demand</h2>
     <p>pick today's meal</p>
+    <h2>Dishes</h2>
 
     </div>
 
