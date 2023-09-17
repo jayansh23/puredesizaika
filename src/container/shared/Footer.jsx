@@ -1,22 +1,73 @@
-import React from 'react'
+import { Container, Row, Col } from 'reactstrap';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
-  return (
-    <div className='footerSection'>
-        <p>Hindu people fast on days such as Ekadashi, in honour of Lord Vishnu or his Avatars, Chaturthi in honour of Ganesh, Mondays in honour of Shiva, or Saturdays 
-in honour of Hanuman or Saturn.[203]Only certain kinds of foods are allowed to be eaten. These include milk and other dairy products (such as dahi), fruit,
-and Western food items such as sago,[204] potatoes,[205] purple-red sweet potatoes, amaranth seeds,[206] nuts and (shama millet).Popular fasting dishes 
-include farari chevdo,[208] sabudanakhichadi, and peanut soup.[209]Diaspora and fusion cuisinesThe interaction of various Indian diaspora communities with 
-the native cultures in their new homeshas resulted in the creation of many fusion cuisines, which blend aspects of Indian and other international cuisines. 
-These cuisines tend to interpolate Indian seasoning and cooking techniques into their own national dishes.Indian Chinese cuisineMain article: Indian Chinese cuisine
-Chicken Manchurian served in HyderabadIndian Chinese cuisine, also known as Indo-Chinese cuisine originated in the 19th century among the Chinese community 
-of Calcutta, during the immigration of Hakka Chinese from Canton (present-day Guangzhou) seeking to escape the First and Second Opium Wars and political instability in the region.[210] Upon exposure to local Indian cuisine, they incorporated many spices and cooking techniques into their own cuisine, thus creating a unique fusion of Indian and Chinese cuisine.[210]
-After 1947, many Cantonese immigrants opened restaurants in Calcutta, serving dishes that combined aspects of Indian cuisine with Cantonese cuisine.[211] In
-other parts of India, Indian Chinese cuisine is derived from Calcutta-Chinese cuisine, but bears little resemblance to their 
-</p>
-    
-    </div>
-  )
-}
+    return (
+        <div className='site-footer'>
+            <Container>
+                <Row>
+                    <Col xs={{ size: 4, offset: 1 }} sm='2'>
+                        <h5>Links</h5>
+                        <ul className='list-unstyled'>
+                            <li>
+                                <Link to='/'>Home</Link>
+                            </li>
+                            <li>
+                                <Link to='/about'>About</Link>
+                            </li>
+                            <li>
+                                <Link to='/contact'>Contact</Link>
+                            </li>
+                        </ul>
+                    </Col>
+                    <Col xs='6' sm='3' className='text-center'>
+                        <h5>Social</h5>
+                        <a
+                            className='btn btn-social-icon btn-instagram'
+                            href='http://instagram.com/'
+                        >
+                            <i className='fa fa-instagram' />
+                        </a>{' '}
+                        <a
+                            className='btn btn-social-icon btn-facebook'
+                            href='http://www.facebook.com/'
+                        >
+                            <i className='fa fa-facebook' />
+                        </a>{' '}
+                        <a
+                            className='btn btn-social-icon btn-twitter'
+                            href='http://twitter.com/'
+                        >
+                            <i className='fa fa-twitter' />
+                        </a>{' '}
+                        <a
+                            className='btn btn-social-icon btn-google'
+                            href='http://youtube.com/'
+                        >
+                            <i className='fa fa-youtube' />
+                        </a>
+                    </Col>
+                    <Col sm='4' className='text-center'>
+                        <a
+                            role='button'
+                            className='btn btn-link'
+                            href='tel:+12065551234'
+                        >
+                            <i className='fa fa-phone' /> +19986754321
+                        </a>
+                        <br />
+                        <a
+                            role='button'
+                            className='btn btn-link'
+                            href='mailto:notreal@notreal.co'
+                        >
+                            <i className='fa fa-envelope-o' /> Puredesi@zaika.co
+                        </a>
+                    </Col>
+                </Row>
+            </Container>
+        </div>
+    );
+};
 
-export default Footer
+export default Footer;

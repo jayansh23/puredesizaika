@@ -7,19 +7,22 @@ body{
     padding: 10px;
     height: 50px;
 }
-.headerLink {
+/* .headerLink {
   
     color: white;
     padding: 5px;
     margin: 5px;
     font-size: 16px;
-    }
+
+    } */
 
     .NavLink {
-    
-        float: left;
-        text-align: right;
-
+        
+        text-align: left;
+        color: white !important;
+        padding-left:5px;
+        padding-right:5px;
+        text-decoration:none;
     }
     .HomeSection {
         background-color:rgb(247, 222, 222);
@@ -28,12 +31,19 @@ body{
     
     
      }
+
+     .HomePara {
+
+        text-align: center;
+        padding-left:50px;
+        padding-right:50px;
+     }
     
 
   .logoSize {
 
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
     float: left;
 }
 
@@ -44,7 +54,7 @@ body{
 
 .footerSection {
 
-    background-color:rgb(41, 40, 40);
+    /* background-color:rgb(41, 40, 40); */
     padding: 10px;
     height: 20px; 
     text-align: center;
@@ -54,6 +64,12 @@ body{
     width: 100%;
 }
 
+.site-footer {
+    background-image: linear-gradient(#cec8ff, white);
+    padding: 20px 0;
+    margin-top: 2rem;
+  }
+  
 .onlineOrder {
     background-color: black;
 }

@@ -1,39 +1,49 @@
 import React from 'react'
 import Slider from 'react-slick'
+import { useState } from 'react';
+
 
 
 
 
 const Banners = () => {
-    var settings = {
+    
+  var settings = {
         dots: true,
         infinite: true,
-        speed: 500,
+      
+        autoplay: true,
+        autoplaySpeed: 1000,
+    
         slidesToShow: 1,
         slidesToScroll: 1
       };
 
+      const BannerPics = [
+{id:1, image:"asset/images/banner3.jpg"},
+{id:1, image:"asset/images/banner1.jpg"},
+{id:1, image:"asset/images/banner2.jpg"},
+{id:1, image:"asset/images/banner3.jpg"}
 
-  return (
+
+ ];
+
+ return (
     <div>
-             <Slider {...settings} className='SliderSection'>
+      <div>
+  <Slider {...settings} className='SliderSection'>
 
-<div>
- <img src="../../asset/images/banner3.jpg"  />
- </div>
- <div>
-   <img src="../../asset/images/banner1.jpg" />
- </div>
- <div>
-   <img src="../../asset/images/banner2.jpg" />
- </div>
- <div>
- <img src="../../asset/images/banner5.jpg" />
+{BannerPics.map ((item,index) =>(
 
- </div>
+<img src={item.image} />
+
+))}
+
+ 
 
 
 </Slider>
+</div>
 
     </div> 
   )

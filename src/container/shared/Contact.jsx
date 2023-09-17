@@ -9,12 +9,9 @@ const FamouseDishes = [
  {id:1, image:require("../../shortPics/profile2.jpg"), name:"MainThali", ingredints:"artist"},
  {id:1, image:require("../../shortPics/profile3.jpg"), name:"VegThali", ingredints:"artist"},
  {id:1, image:require("../../shortPics/profile4.jpg"), name:"Combo", ingredints:"artist"}
+];
 
-
-
-    ];
-
-    const [menu, setmenu] = useState(FamouseDishes);
+    // const [menu, setmenu] = useState(FamouseDishes);
 
 
   return (
@@ -22,8 +19,8 @@ const FamouseDishes = [
         <h1>Our Famouse dishes</h1>
     
     
-    <div className='row'>
-    {menu.map ((item,index) =>(
+  <div className='row'>
+    {FamouseDishes.map ((item,index) =>(
         <div className='col-md-3' key={index}>
               <div class="card" >
               <img src={item.image} class="card-img-top" alt="..."/>
