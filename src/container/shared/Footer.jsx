@@ -61,7 +61,7 @@ const Footer = () => {
                             className='btn btn-link'
                             href='mailto:notreal@notreal.co'
                         >
-                            <i className='fa fa-envelope-o' /> Puredesi@zaika.co
+                            <i className='fa fa-envelope-o' /> Puredesi@zaika.com
                         </a>
                     </Col>
                 </Row>
